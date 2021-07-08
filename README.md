@@ -1,18 +1,30 @@
 # Additional Setup Instructions (Mac OS X)
 
+1. Run the following commands
 ```
-brew install node
+# Install node
+#    sudo apt install nodejs
+#    Window's users might want: https://nodejs.org/dist/v14.17.3/node-v14.17.3-x64.msi
+brew install node 
+
+# Install "Serverless Framework"
+#    npm install -g serverless
 curl -o- -L https://slss.io/install | bash
+
+# Install Serverless Framework Dependencies
 sls plugin install -n serverless-python-requirements
 ```
 
-Install and start Docker daemon
+2. Install and start Docker daemon
 
+3. Run the following commands
 ```
 npx serverless deploy
 ```
 
-Install Anaconda3 (condas)
+4. Install Anaconda3 (condas)
+
+5. Run the following commands
 
 ```
 conda create --name myenv
@@ -25,6 +37,9 @@ export LAP_NAME=object-lambda-transform-dev-lambda-ap
 export BUCKET_NAME=object-lambda-transform-dev-620889225884-us-east-1
 python3 run.py
 ```
+
+It appears that it's working!
+
 
 # object-lambda-transform
 
