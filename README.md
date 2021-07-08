@@ -1,4 +1,4 @@
-# Additional Setup Instructions (Mac OS X)
+# Additional Setup Instructions
 
 1. Run the following commands
 ```
