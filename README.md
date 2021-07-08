@@ -12,6 +12,11 @@ Install and start Docker daemon
 npx serverless deploy
 ```
 
+PIP Dependencies:
+```
+pip3 install pandas boto3 pyarrow
+```
+
 # object-lambda-transform
 
 An S3 Object Lambda example, converting CSV to Parquet on the fly.
