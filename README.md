@@ -1,3 +1,17 @@
+# Additional Setup Instructions (Mac OS X)
+
+```
+brew install node
+curl -o- -L https://slss.io/install | bash
+sls plugin install -n serverless-python-requirements
+```
+
+Install and start Docker daemon
+
+```
+npx serverless deploy
+```
+
 # object-lambda-transform
 
 An S3 Object Lambda example, converting CSV to Parquet on the fly.
