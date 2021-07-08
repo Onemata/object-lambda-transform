@@ -12,9 +12,18 @@ Install and start Docker daemon
 npx serverless deploy
 ```
 
-PIP Dependencies:
+Install Anaconda3 (condas)
+
 ```
-pip3 install pandas boto3 pyarrow
+conda create --name myenv
+conda activate myenv
+conda install -c conda-forge pyarrow
+conda install -c anaconda boto3
+conda install pandas
+export LAP_ARN=arn:aws:s3-object-lambda:us-east-1:620889225884:accesspoint/object-lambda-transform-dev-lambda-ap
+export LAP_NAME=object-lambda-transform-dev-lambda-ap
+export BUCKET_NAME=object-lambda-transform-dev-620889225884-us-east-1
+python3 run.py
 ```
 
 # object-lambda-transform
